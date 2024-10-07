@@ -22,6 +22,7 @@ const Input = ({
   color,
   min,
   max,
+  value,
   maxLength,
   autoFocus,
   updateField,
@@ -38,6 +39,7 @@ const Input = ({
         maxLength={maxLength}
         min={min}
         max={max}
+        value={value}
         className="mb-4"
         autoFocus={autoFocus}
         onChange={(e) => updateField(name, e.target.value)}

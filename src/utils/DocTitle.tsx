@@ -14,6 +14,6 @@ export const getTitleFromRoute = (path: string): string => {
   const inMapping = titleMap[path as keyof typeof titleMap];
 
   return inMapping
-    ? `${titleMap[path as keyof typeof titleMap]} | User`
-    : "Not Found | User";
+    ? `${titleMap[path as keyof typeof titleMap]} | User Auth`
+    : "Not Found | User Auth";
 };

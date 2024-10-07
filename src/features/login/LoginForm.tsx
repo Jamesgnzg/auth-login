@@ -75,7 +75,7 @@ const LoginForm = (): React.ReactElement => {
               label="Branch ID"
               variant="outlined"
               color={hasError ? "error" : "default"}
-              min={1}
+              min={10000}
               max={99999}
               autoFocus={true}
               updateField={setData}
