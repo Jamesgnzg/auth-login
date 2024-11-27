@@ -1,10 +1,10 @@
 import UserForm from "../features/dashboard/UserForm";
 import UserList from "../features/dashboard/UserList";
 import { users } from "../data/users_data";
-import { useState } from "react";
+import { ReactElement, useState } from "react";
 import { IUser } from "../interface/UserInterface";
 
-const Dashboard: React.FC = () => {
+const Dashboard: React.FC = (): ReactElement => {
   const [usersList, setUsersList] = useState<IUser[]>(users);
 
   const addNewUser = (newUser: IUser) => {

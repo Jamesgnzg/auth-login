@@ -16,12 +16,12 @@ import PrivateRoutes from "./routes/PrivateRoutes";
 import { INDEX } from "./routes/paths";
 
 const App = () => {
-  const locationPath = useLocation().pathname;
+  const { pathname } = useLocation();
 
   return (
     <>
       <Helmet>
-        <title>{getTitleFromRoute(locationPath)}</title>
+        <title>{getTitleFromRoute(pathname)}</title>
       </Helmet>
       <Routes>
         <Route element={<MainLayout />}>
